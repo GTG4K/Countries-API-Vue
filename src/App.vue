@@ -31,11 +31,13 @@ export default {
   --dark-blue-100-hover: hsl(209, 25%, 25%);
   --dark-blue-200: hsl(207, 26%, 15%);
   --dark-blue-300: hsl(200, 15%, 10%);
+  --dark-blue-300-shadow: hsla(197, 14%, 10%, 0.5);
 
   --color-light-100: hsl(0, 0%, 98%);
   --color-light-100-background: hsl(0, 0%, 90%);
   --color-light-100-hover: hsl(0, 0%, 80%);
   --color-light-200: hsl(0, 0%, 70%);
+  --color-light-200-shadow: hsl(0, 0%, 70%, 0.5);
   --color-light-300: hsl(0, 0%, 50%);
   --color-light-400: hsl(0, 0%, 30%);
 
@@ -49,6 +51,7 @@ export default {
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font-family);
+  transition: color 0.2s;
 }
 main {
   margin-top: var(--header-height);

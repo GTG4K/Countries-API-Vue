@@ -1,5 +1,5 @@
 <template>
-  <div class="country-card" :class="activeTheme">
+  <div class="country-card" :class="activeTheme" @click="redirectTo">
     <img :src="image" alt="" />
     <div class="country-details">
       <h2>{{ name }}</h2>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  props: ['image', 'name', 'population', 'region', 'capital'],
+  props: ['image', 'name', 'population', 'region', 'capital', 'redirect'],
   computed: {
     countryPopulation() {
       return `Population: ${this.population}`;
@@ -30,6 +30,11 @@ export default {
       return theme;
     },
   },
+  methods: {
+    redirectTo() {
+      this.$router.push(`/country/${this.redirect}`);
+    },
+  },
 };
 </script>
 
@@ -41,6 +46,7 @@ export default {
   border-radius: 8px;
   transition: all 0.3s ease;
   cursor: pointer;
+  box-shadow: 0 0 10px var(--dark-blue-300-shadow);
 }
 .country-card:hover {
   background: var(--dark-blue-100-hover);
@@ -48,6 +54,11 @@ export default {
 }
 .country-card.light {
   background: var(--color-light-100);
+  box-shadow: 0 0 10px 3px var(--color-light-200);
+}
+.country-card.light:hover {
+  background: var(--color-light-100-hover);
+  box-shadow: 0 0 10px var(--color-light-200-shadow);
 }
 .country-card.light h2 {
   color: var(--dark-blue-300);

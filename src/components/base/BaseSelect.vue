@@ -73,10 +73,12 @@ export default {
   font-weight: 400;
   cursor: pointer;
   transition: all 0.2s ease;
+  box-shadow: 0 0 10px var(--dark-blue-300-shadow);
 }
 .select.light .select-body {
   background: var(--color-light-100);
   color: var(--dark-blue-300);
+  box-shadow: 0 0 10px var(--color-light-200-shadow);
 }
 .select.light .select-body:hover {
   background: var(--color-light-100-hover);
@@ -98,10 +100,12 @@ export default {
   background: var(--dark-blue-100);
   overflow: hidden;
   transition: all 0.5s ease;
+  box-shadow: 0 0 10px var(--dark-blue-300-shadow);
 }
 .select.light .select-options {
   background: var(--color-light-100);
   color: var(--dark-blue-300);
+  box-shadow: 0 0 10px var(--color-light-200-shadow);
 }
 .active.select-options {
   max-height: 170px;

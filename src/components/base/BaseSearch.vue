@@ -33,9 +33,11 @@ export default {
   gap: 1rem;
   border-radius: 8px;
   align-items: center;
+  box-shadow: 0 0 10px var(--dark-blue-300-shadow);
 }
 .search.light {
   background: var(--color-light-100);
+  box-shadow: 0 0 10px var(--color-light-200-shadow);
 }
 i {
   color: var(--color-light-100);

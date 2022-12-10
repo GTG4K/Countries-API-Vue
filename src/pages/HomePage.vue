@@ -1,5 +1,6 @@
 <template>
-  <div class="action">
+  <loading-spinner class="fix-mid" v-if="!dataLoaded"></loading-spinner>
+  <div v-else class="action">
     <base-search
       v-model="search"
       placeholder="Search for a country..."
@@ -15,6 +16,7 @@
       :population="country.population"
       :region="country.region"
       :capital="country.capital"
+      :redirect="country.name.official"
     ></country-card>
   </div>
 </template>
@@ -96,5 +98,11 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2.5rem;
+}
+.fix-mid {
+  position: fixed;
+  top: 3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 </style>
