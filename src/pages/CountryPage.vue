@@ -188,7 +188,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: var(--color-light-200);
+  color: var(--color-light-100);
 }
 .light .border-countries {
   color: var(--dark-blue-200);
@@ -246,7 +246,6 @@ h2 {
   }
 
   .border-countries p {
-    color: var(--color-light-100);
     font-size: 1.2rem;
     font-weight: 700;
   }
