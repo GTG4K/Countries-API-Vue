@@ -1,5 +1,5 @@
 <template>
-  <div class="lds-ellipsis">
+  <div :class="activeTheme" class="lds-ellipsis">
     <div></div>
     <div></div>
     <div></div>
@@ -8,7 +8,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    activeTheme() {
+      const theme = this.$store.getters.getTheme;
+      return theme;
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -24,8 +31,11 @@ export default {};
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--color-light-100);
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.light.lds-ellipsis div {
+  background: var(--dark-blue-200);
 }
 .lds-ellipsis div:nth-child(1) {
   left: 8px;

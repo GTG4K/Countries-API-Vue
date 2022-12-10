@@ -42,4 +42,23 @@ h2 {
 header.light h2 {
   color: var(--dark-blue-300);
 }
+
+@media only screen and (max-width: 800px) {
+  header {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+  header {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  h2 {
+    font-size: 1rem;
+  }
+}
 </style>

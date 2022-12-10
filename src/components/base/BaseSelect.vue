@@ -131,4 +131,15 @@ i {
 i.active {
   transform: rotate(-180deg);
 }
+@media only screen and (max-width: 800px) {
+  .select {
+    width: 100%;
+  }
+  .select-body {
+    width: 100%;
+  }
+  .select-options {
+    width: 100%;
+  }
+}
 </style>

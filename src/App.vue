@@ -62,4 +62,9 @@ main {
 main.light {
   background: var(--color-light-100-background);
 }
+@media only screen and (max-width: 1150px) {
+  main {
+    padding: 1rem 2rem;
+  }
+}
 </style>

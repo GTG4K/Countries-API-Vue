@@ -59,4 +59,9 @@ input::placeholder {
 .search.light input {
   color: var(--dark-blue-300);
 }
+@media only screen and (max-width: 800px) {
+  .search {
+    width: 100%;
+  }
+}
 </style>

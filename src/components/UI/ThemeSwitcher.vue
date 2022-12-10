@@ -59,4 +59,17 @@ h2 {
   font-size: 1.2rem;
   font-weight: 600;
 }
+@media only screen and (max-width: 550px) {
+  .theme-switcher {
+    gap: 0.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 0.8rem;
+  }
+}
 </style>

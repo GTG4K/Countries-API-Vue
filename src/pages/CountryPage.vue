@@ -205,4 +205,50 @@ h2 {
   left: 50%;
   transform: translate(-50%, 0);
 }
+
+@media only screen and (max-width: 1150px) {
+  .country-full-details {
+    gap: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .country-extras p {
+    font-size: 0.9rem;
+  }
+  .extras {
+    gap: 0.4rem;
+  }
+  img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .country-full-details {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .country-details {
+    gap: 2rem;
+  }
+  .country-extras p {
+    font-size: 1.1rem;
+  }
+  .country-extras {
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
+  .border-countries {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .border-countries p {
+    color: var(--color-light-100);
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
 </style>

@@ -105,4 +105,31 @@ export default {
   left: 50%;
   transform: translate(-50%, 0);
 }
+@media only screen and (max-width: 1150px) {
+  .country-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .country-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .country-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .action {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .country-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
